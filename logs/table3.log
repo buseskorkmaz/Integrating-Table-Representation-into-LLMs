@@ -1,0 +1,657 @@
+Experiments started for base...Experiment: {'abstract': False, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 3.0749
+  Sample Training Predictions: [5.0002723 5.9997945 4.9998255 2.999949  3.0007567]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.481932  5.7575293 5.7182746 3.8190675 3.0941744]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.00
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00       1.0
+           4       0.00      0.00      0.00       6.0
+           5       0.00      0.00      0.00       1.0
+           6       0.00      0.00      0.00       1.0
+           7       0.00      0.00      0.00       1.0
+           8       0.00      0.00      0.00       1.0
+           9       0.00      0.00      0.00       0.0
+
+    accuracy                           0.00      11.0
+   macro avg       0.00      0.00      0.00      11.0
+weighted avg       0.00      0.00      0.00      11.0
+
+
+Experiment: {'abstract': True, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 2.7562
+  Sample Training Predictions: [4.9999547 6.000304  5.000296  3.000275  3.0002196]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [6.319438  5.476869  5.1913757 5.170979  6.019    ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.50      0.33      0.40         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.08      0.06      0.07        11
+weighted avg       0.27      0.18      0.22        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 0.9039
+  Sample Training Predictions: [5.0003    6.002052  5.0001774 3.000652  3.0009632]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.366407  4.59302   3.7249703 5.0412517 5.050541 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.09
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.33      0.17      0.22         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.09        11
+   macro avg       0.06      0.03      0.04        11
+weighted avg       0.18      0.09      0.12        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': True, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 6.5358
+  Sample Training Predictions: [5.0001035 5.9998837 5.0006714 3.0004005 3.0002701]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [3.504072  5.120605  3.2269    3.1696248 4.9940467]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.09
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.50      0.17      0.25         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.09        11
+   macro avg       0.08      0.03      0.04        11
+weighted avg       0.27      0.09      0.14        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': True}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 5.5950
+  Sample Training Predictions: [4.9999604 5.9999943 5.000654  3.000792  3.0002866]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [4.0285077 4.896095  3.4573698 3.1132226 4.645146 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.25      1.00      0.40         1
+           4       0.50      0.17      0.25         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.12      0.19      0.11        11
+weighted avg       0.30      0.18      0.17        11
+
+
+Experiments started for finetuned...Experiment: {'abstract': False, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.2045
+  Test Error/Accuracy: 3.5896
+  Sample Training Predictions: [5.000585  6.000057  4.9994707 3.0002284 3.0004072]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [6.304172  5.5427313 4.6868854 6.116333  3.4594984]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 0.95
+  Test Accuracy: 0.00
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00       1.0
+           4       0.00      0.00      0.00       6.0
+           5       0.00      0.00      0.00       1.0
+           6       0.00      0.00      0.00       1.0
+           7       0.00      0.00      0.00       1.0
+           8       0.00      0.00      0.00       1.0
+
+    accuracy                           0.00      11.0
+   macro avg       0.00      0.00      0.00      11.0
+weighted avg       0.00      0.00      0.00      11.0
+
+
+Experiment: {'abstract': True, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 3.9312
+  Sample Training Predictions: [5.0002313 5.999951  4.9998837 3.0002139 3.0001323]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [4.004317  5.597518  5.864558  5.7856903 4.531143 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       1.00      0.33      0.50         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.17      0.06      0.08        11
+weighted avg       0.55      0.18      0.27        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 3.5107
+  Sample Training Predictions: [4.9995837 5.999851  4.9996786 3.0000608 3.0002801]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [4.3741236 3.9733717 6.1779633 6.334647  4.705861 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.50      0.17      0.25         6
+           5       0.25      1.00      0.40         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.12      0.19      0.11        11
+weighted avg       0.30      0.18      0.17        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': True, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 3.0180
+  Sample Training Predictions: [4.9999704 5.999989  4.999827  3.0001447 3.0002542]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [4.28078   3.8366568 5.903283  4.705845  5.70174  ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.67      0.33      0.44         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.11      0.06      0.07        11
+weighted avg       0.36      0.18      0.24        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': True}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 2.6326
+  Sample Training Predictions: [4.9999824 5.9998813 4.999842  3.000142  3.0003679]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [4.3222957 4.0316825 5.285069  4.5606146 6.334026 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.27
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         1
+           4       0.67      0.33      0.44         6
+           5       0.50      1.00      0.67         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.27        11
+   macro avg       0.17      0.19      0.16        11
+weighted avg       0.41      0.27      0.30        11
+
+
+Experiments started for all...Experiment: {'abstract': False, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 4.2416
+  Sample Training Predictions: [5.000711  6.000269  5.0000644 3.00002   3.0004396]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.447643  6.221495  4.369279  5.714022  6.1298556]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.09
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.33      0.17      0.22         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.09        11
+   macro avg       0.06      0.03      0.04        11
+weighted avg       0.18      0.09      0.12        11
+
+
+Experiment: {'abstract': True, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 2.3436
+  Sample Training Predictions: [5.0001297 5.9997916 5.000061  3.000265  3.0002668]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.6967163 4.564875  4.859028  4.729834  3.8573453]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.50      1.00      0.67         1
+           4       0.50      0.17      0.25         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.17      0.19      0.15        11
+weighted avg       0.32      0.18      0.20        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 3.8071
+  Sample Training Predictions: [5.0005393 5.9999585 5.000047  3.0000894 3.0001657]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.452519  8.05909   3.8894145 6.1457553 3.6911714]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       1.00      0.33      0.50         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.17      0.06      0.08        11
+weighted avg       0.55      0.18      0.27        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': True, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 2.6107
+  Sample Training Predictions: [4.9999604 6.000079  5.000189  3.0001907 3.0009098]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.4364133 4.401251  5.8734565 4.37748   5.869603 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.27
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.25      1.00      0.40         1
+           4       0.67      0.33      0.44         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.27        11
+   macro avg       0.15      0.22      0.14        11
+weighted avg       0.39      0.27      0.28        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': True}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 2.3012
+  Sample Training Predictions: [5.000026  6.0000343 5.000039  3.000324  3.0009253]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [6.703471  4.51042   6.02549   3.7469115 6.4214783]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.36
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.33      1.00      0.50         1
+           4       0.67      0.33      0.44         6
+           5       1.00      1.00      1.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00         0
+
+    accuracy                           0.36        11
+   macro avg       0.29      0.33      0.28        11
+weighted avg       0.48      0.36      0.38        11
+
+
+Experiments started for wiki_sci...Experiment: {'abstract': False, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0114
+  Test Error/Accuracy: 5.8933
+  Sample Training Predictions: [5.0002775 6.000143  4.999794  2.9998167 3.0000656]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [7.2376423 6.8681726 6.7707024 5.142103  5.9925003]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 0.98
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.00      0.00      0.00         6
+           5       0.50      1.00      0.67         1
+           6       0.00      0.00      0.00         1
+           7       0.33      1.00      0.50         1
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00         0
+
+    accuracy                           0.18        11
+   macro avg       0.12      0.29      0.17        11
+weighted avg       0.08      0.18      0.11        11
+
+
+Experiment: {'abstract': True, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 4.4433
+  Sample Training Predictions: [4.999881  6.000066  4.9998827 3.0000677 3.0002594]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [6.789046  3.4911203 6.097977  6.698337  5.0251074]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.50      0.17      0.25         6
+           5       0.00      0.00      0.00         1
+           6       0.20      1.00      0.33         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.12      0.19      0.10        11
+weighted avg       0.29      0.18      0.17        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 3.2799
+  Sample Training Predictions: [4.9999638 6.000029  4.999924  3.0001628 3.0001307]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [4.4219027 4.5903153 4.7810473 4.760988  3.5258996]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.27
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       1.00      0.33      0.50         6
+           5       0.00      0.00      0.00         1
+           6       0.33      1.00      0.50         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.27        11
+   macro avg       0.22      0.22      0.17        11
+weighted avg       0.58      0.27      0.32        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': True, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 3.1107
+  Sample Training Predictions: [5.000234  5.9998536 4.999844  3.0001702 3.0012715]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [6.809419  5.936354  4.571285  4.2703276 4.540665 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.09
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       1.00      0.17      0.29         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.09        11
+   macro avg       0.17      0.03      0.05        11
+weighted avg       0.55      0.09      0.16        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': True}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 6.0538
+  Sample Training Predictions: [5.000053  5.9996715 4.99988   3.0001948 3.0009484]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.286665  6.970408  6.4533873 6.067267  6.5475836]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.18
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.67      0.33      0.44         6
+           5       0.00      0.00      0.00         1
+           6       0.00      0.00      0.00         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+
+    accuracy                           0.18        11
+   macro avg       0.11      0.06      0.07        11
+weighted avg       0.36      0.18      0.24        11
+
+
+Experiments started for wiki...Experiment: {'abstract': False, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 4.3055
+  Sample Training Predictions: [4.9997563 5.9999847 5.0000854 2.9998014 3.0000653]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.8124185 6.2924814 5.046905  4.4607935 3.8007617]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.00
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00       1.0
+           4       0.00      0.00      0.00       6.0
+           5       0.00      0.00      0.00       1.0
+           6       0.00      0.00      0.00       1.0
+           7       0.00      0.00      0.00       1.0
+           8       0.00      0.00      0.00       1.0
+           9       0.00      0.00      0.00       0.0
+
+    accuracy                           0.00      11.0
+   macro avg       0.00      0.00      0.00      11.0
+weighted avg       0.00      0.00      0.00      11.0
+
+
+Experiment: {'abstract': True, 'intro': False, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 6.9361
+  Sample Training Predictions: [4.999757  5.999892  4.9999323 2.9999845 2.9999113]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [4.8382616 6.6950135 5.6539927 5.727443  6.7617145]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.27
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           2       0.00      0.00      0.00         0
+           3       0.00      0.00      0.00         1
+           4       1.00      0.33      0.50         6
+           5       0.00      0.00      0.00         1
+           6       0.25      1.00      0.40         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00         0
+
+    accuracy                           0.27        11
+   macro avg       0.16      0.17      0.11        11
+weighted avg       0.57      0.27      0.31        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0000
+  Test Error/Accuracy: 4.6669
+  Sample Training Predictions: [5.000058 6.000078 5.000153 3.000016 3.001151]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [6.176232  5.9613824 4.2169514 3.5969195 6.658663 ]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 1.00
+  Test Accuracy: 0.00
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00       1.0
+           4       0.00      0.00      0.00       6.0
+           5       0.00      0.00      0.00       1.0
+           6       0.00      0.00      0.00       1.0
+           7       0.00      0.00      0.00       1.0
+           8       0.00      0.00      0.00       1.0
+
+    accuracy                           0.00      11.0
+   macro avg       0.00      0.00      0.00      11.0
+weighted avg       0.00      0.00      0.00      11.0
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': True, 'tables': False}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0720
+  Test Error/Accuracy: 5.4882
+  Sample Training Predictions: [4.9999733 5.9998174 5.4991126 3.6668189 3.0002916]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [5.789852  5.984033  7.8422174 5.0484686 7.5505223]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 0.95
+  Test Accuracy: 0.27
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.40      0.33      0.36         6
+           5       0.00      0.00      0.00         1
+           6       0.25      1.00      0.40         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00         0
+
+    accuracy                           0.27        11
+   macro avg       0.09      0.19      0.11        11
+weighted avg       0.24      0.27      0.23        11
+
+
+Experiment: {'abstract': True, 'intro': True, 'captions': False, 'tables': True}
+Regressor: XGBoost
+  Training Error/Accuracy: 0.0720
+  Test Error/Accuracy: 5.2088
+  Sample Training Predictions: [4.999983  6.000098  5.4996524 3.6667705 3.0009108]
+  Sample True Training Scores: [5, 6, 5, 3, 3]
+  Sample Test Predictions: [6.216759  5.7794986 7.8991337 4.3396583 7.3954687]
+  Sample True Test Scores: [7, 4, 3, 4, 4]
+
+  Training Accuracy: 0.95
+  Test Accuracy: 0.27
+  Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+           3       0.00      0.00      0.00         1
+           4       0.40      0.33      0.36         6
+           5       0.00      0.00      0.00         1
+           6       0.25      1.00      0.40         1
+           7       0.00      0.00      0.00         1
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00         0
+
+    accuracy                           0.27        11
+   macro avg       0.09      0.19      0.11        11
+weighted avg       0.24      0.27      0.23        11
