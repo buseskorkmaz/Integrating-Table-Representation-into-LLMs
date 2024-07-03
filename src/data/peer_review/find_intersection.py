@@ -5,19 +5,21 @@ from datasets import load_dataset, load_from_disk
 
 data_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../../../data/')
 
-# Define the file path to the JSON file
-base_path = os.path.join(data_path, 'processed_full_large_dataset.json')
+# # Define the file path to the JSON file
+# base_path = os.path.join(data_path, 'processed_full_large_dataset.json')
 
-# Variable to store the loaded data
-scigen_papers = {}
+# # Variable to store the loaded data
+# scigen_papers = {}
 
-# Check if the file exists
-if base_path.is_file():
-    with open(base_path, 'r', encoding='utf-8') as file:
-        # Load the data from the JSON file
-        scigen_papers = json.load(file)
-else:
-    print(f"File not found: {base_path}")
+# # Check if the file exists
+# if base_path.is_file():
+#     with open(base_path, 'r', encoding='utf-8') as file:
+#         # Load the data from the JSON file
+#         scigen_papers = json.load(file)
+# else:
+#     print(f"File not found: {base_path}")
+
+scigen_papers = load_dataset("buseskorkmaz/scigen_enriched_with_full_body_text")['train']
 
 scigen_titles = []
 for i in range(len(scigen_papers)):

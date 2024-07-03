@@ -13,6 +13,7 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import LabelEncoder
 
+from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 import torch.nn.functional as F
@@ -158,19 +159,21 @@ class Evaluator:
 
     def read_dataset(self):
       
-        # Define the file path to the JSON file
-        base_path = Path(os.path.join(root_path, 'data/processed_full_large_dataset.json'))
+        # # Define the file path to the JSON file
+        # base_path = Path(os.path.join(root_path, 'data/processed_full_large_dataset.json'))
 
-        # Variable to store the loaded data
-        scigen_papers = {}
+        # # Variable to store the loaded data
+        # scigen_papers = {}
 
-        # Check if the file exists
-        if base_path.is_file():
-            with open(base_path, 'r', encoding='utf-8') as file:
-                # Load the data from the JSON file
-                scigen_papers = json.load(file)
-        else:
-            print(f"File not found: {base_path}")
+        # # Check if the file exists
+        # if base_path.is_file():
+        #     with open(base_path, 'r', encoding='utf-8') as file:
+        #         # Load the data from the JSON file
+        #         scigen_papers = json.load(file)
+        # else:
+        #     print(f"File not found: {base_path}")
+
+        scigen_papers = load_dataset("buseskorkmaz/scigen_enriched_with_full_body_text")['train']
 
         print("First loaded sample:", scigen_papers['0']['paper'])
 
