@@ -38,6 +38,6 @@ We evaluate our models first generating the explanations for tables in test data
 ---
 ## Peer Review Score Prediction
 
-After obtaining the datasets, we run the peer review score prediction experiments with the script `src/peer_review/peer_review_prediction.py`.
+After obtaining the datasets, we run the peer review score prediction experiments with the script `src/peer_review/peer_review_prediction.py`. The produced results are shared under `logs/`.
 
 
