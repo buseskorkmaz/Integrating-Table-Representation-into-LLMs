@@ -16,7 +16,7 @@ base_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../../gene
 
 # Model sizes to evaluate
 # to obtain table 1, use only pre-trained LLMs with False condition in the loop
-model_sizes = ['flan-t5-small', 'flan-t5-base', 'flan-t5-large', 'flan-t5-xl', 'flan-t5-xl-wikitable-mrs_sqa', 'flan-t5-xl-wikitable', 'Llama-2-7b-chat-hf','TableLlama', 'wikitable-scigen-table', 'wikitable-mrs_sqa-scigen-table-1e-6']
+model_sizes = ['flan-t5-small', 'flan-t5-base', 'flan-t5-large', 'flan-t5-xl', 'flan-t5-xl-wikitable-mrs_sqa', 'flan-t5-xl-wikitable', 'Llama-2-7b-chat-hf','TableLlama', 'wikitable-scigen-table', 'wikitable-mrs_sqa-scigen-table']
 
 # Tests to evaluate
 tests = ['test_cl', 'test_other']

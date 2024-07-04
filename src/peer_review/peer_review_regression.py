@@ -31,23 +31,23 @@ class FlanT5Model:
         base_model = "google/flan-t5-xl"
         self.tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
         if model_type == "finetuned":
-            self.model = AutoModelForSeq2SeqLM.from_pretrained("buseskorkmaz/flant5-xl-table-1e-6")
+            self.model = AutoModelForSeq2SeqLM.from_pretrained("buseskorkmaz/flant5-xl-table")
             self.model.to("cuda" if torch.cuda.is_available() else "cpu")
         elif model_type == "wiki_sci":
             # remove mrs_sqa
-            new_model = os.path.join(root_path, "models/wikitable-scigen-table-1e-6")
+            new_model = os.path.join(root_path, "models/wikitable-scigen-table")
             self.model = AutoModelForSeq2SeqLM.from_pretrained(base_model)  # Load base model
             self.model_state_dict = torch.load(os.path.join(new_model, "model.pkl"), map_location='cpu')
             self.model.load_state_dict(self.model_state_dict)
             self.model.to("cuda" if torch.cuda.is_available() else "cpu")
         elif model_type == "wiki":
-            new_model = os.path.join(root_path, 'models/flan-t5-xl-wikitable-1e-6')
+            new_model = os.path.join(root_path, 'models/flan-t5-xl-wikitable')
             self.model = AutoModelForSeq2SeqLM.from_pretrained(base_model)  # Load base model
             self.model_state_dict = torch.load(os.path.join(new_model, "model.pkl"), map_location='cpu')
             self.model.load_state_dict(self.model_state_dict)
             self.model.to("cuda" if torch.cuda.is_available() else "cpu")
         elif model_type == "all":
-            new_model = os.path.join(root_path, 'models/wikitable-mrs_sqa-scigen-table-1e-6')
+            new_model = os.path.join(root_path, 'models/wikitable-mrs_sqa-scigen-table')
             self.model = AutoModelForSeq2SeqLM.from_pretrained(base_model)  # Load base model
             self.model_state_dict = torch.load(os.path.join(new_model, "model.pkl"), map_location='cpu')
             self.model.load_state_dict(self.model_state_dict)

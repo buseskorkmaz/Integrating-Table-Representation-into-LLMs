@@ -156,7 +156,7 @@ def main(model_name):
 
     # Load tokenizer and model
     model_id = f"google/{model_name}"
-    new_model = os.path.join(file_path, f'../../models/flan-t5-xl-wikitable-1e-6')
+    new_model = os.path.join(file_path, f'../../models/flan-t5-xl-wikitable')
     tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
     # t5_cfg = AutoConfig.from_pretrained(pretrained_model_name_or_path=model_id)
     # print(t5_cfg)

@@ -116,7 +116,7 @@ def main(model_name):
     print("Use FP16:", accelerator.use_fp16)
 
     train_cfg = {
-        "save_checkpoint_dir": os.path.join(file_path, f'../../models/{model_name}-wikitable-1e-6'),
+        "save_checkpoint_dir": os.path.join(file_path, f'../../models/{model_name}-wikitable'),
         "use_wandb" : "true",
         "wandb_project" : "table_understanding",
         "dataloader_workers" : 1,
