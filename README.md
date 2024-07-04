@@ -1,12 +1,10 @@
 # Integrating Table Representations into Large Language Models for Improved Scholarly Document Comprehension
----
+
 ## Environment
----
 
 This code developed with Python 3.10. The packages needed can be found in `requirements.txt`. 
 
 ## Dataset
----
 
 ### Table Question-Answering
 
@@ -26,7 +24,6 @@ The intersection of SciGen and PeerRead is identified through `src/data/peer_rev
 
 We train the models using the scripts under `src/train/`. The trained models are available at HuggingFace and `scripts/download_models.sh` share tips regarding how to obtain these models.
 
----
 ## Training
 
 All models are trained on A100 80GB GPU(s). FlanT5 models are usually fit into 1 GPU while Llama-2-7B may require 2 GPUs. We log the experiments to `wandb`. Training scripts utilize `accelerate` default config in your environment. Also, the hyperparameters needed for training is placed in train_cfg in respective training scripts.
@@ -35,7 +32,6 @@ All models are trained on A100 80GB GPU(s). FlanT5 models are usually fit into 1
 
 We evaluate our models first generating the explanations for tables in test datasets `data/t5_compliant_hf_test_cl` and `data/t5_compliant_hf_test_other` through `src/eval/evaluate_t5.py` or `src/eval/evaluate_llama.py`. These scripts generate the explanations under the `generations/` directory. Then, we compute the reported scores of ROUGE, BERT Score and METEOR using the `src/eval/compute_meteor_rouge.py`.
 
----
 ## Peer Review Score Prediction
 
 After obtaining the datasets, we run the peer review score prediction experiments with the script `src/peer_review/peer_review_prediction.py`. The produced results are shared under `logs/`.
